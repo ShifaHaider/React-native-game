@@ -5,9 +5,9 @@ export default class App extends React.Component {
   render() {
     return (
         <View style={styles.container}>
-          <ImageBackground  source={require('./images (2).jpg')} style={styles.backgroundImage}>
+          <ImageBackground source={require('./images (2).jpg')} style={styles.backgroundImage}>
             <Text>Hello World!</Text>
-          </Image>
+          </ImageBackground>
         </View>
 );
 }
