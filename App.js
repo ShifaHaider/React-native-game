@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View , Images , Button } from 'react-native';
+import { StyleSheet, Text, View , ImageBackground  , Button } from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
         <View style={styles.container}>
-          <Image source={require('./images (2).jpg')} style={styles.backgroundImage}>
+          <ImageBackground  source={require('./images (2).jpg')} style={styles.backgroundImage}>
             <Text>Hello World!</Text>
           </Image>
         </View>
