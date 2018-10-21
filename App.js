@@ -5,9 +5,14 @@ export default class App extends React.Component {
   render() {
     return (
         <View style={styles.container}>
-          <ImageBackground source={require('./images (2).jpg')} style={styles.backgroundImage}>
-            <Text>Hello World!</Text>
+          <ImageBackground source={} style={{width: '100%', height: '100%'}}>
+            <Text>Inside</Text>
           </ImageBackground>
+          <Image
+              source={{
+              uri: 'https://facebook.github.io/react/logo-og.png',
+              cache: 'only-if-cached',}}
+              style={{width: 400, height: 400}}/>
         </View>
 );
 }
