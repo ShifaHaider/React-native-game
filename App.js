@@ -4,16 +4,12 @@ import { StyleSheet, Text, View , ImageBackground  , Button , Image } from 'reac
 export default class App extends React.Component {
   render() {
     return (
-        <View style={{backgroungColor: 'red'}}>
-          <ImageBackground source={} style={{width: '100%', height: '100%'}}>
-            <View style{{backgroundColor: 'black'}}>
-            <Text >Inside</Text>
-            <Text >Inside</Text>
-            </View>
-          </ImageBackground>
-          <Image
-              source={require('https://facebook.github.io/react/logo-og.png')}
-              style={{width: 400, height: 400}}/>
+        <View style={styles.container}>
+          <Image source={require('./images (2).jpg')}>
+
+            {this.props.children}
+
+          </Image>
         </View>
 );
 }
@@ -22,7 +18,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
+    //backgroundColor: 'red',
     alignItems: 'center',
     justifyContent: 'center',
   },
