@@ -9,9 +9,7 @@ export default class App extends React.Component {
             <Text>Inside</Text>
           </ImageBackground>
           <Image
-              source={{
-              uri: 'https://facebook.github.io/react/logo-og.png',
-              cache: 'only-if-cached',}}
+              source={{'https://facebook.github.io/react/logo-og.png'}}
               style={{width: 400, height: 400}}/>
         </View>
 );
