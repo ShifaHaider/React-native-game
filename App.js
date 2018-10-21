@@ -11,12 +11,14 @@ export default class App extends React.Component {
     Alert.alert(`x coord = ${evt.nativeEvent.locationX}`);
     Alert.alert(`y coord = ${evt.nativeEvent.locationY}`);
   }
+  const ImagesExample = () => (
+      <Image source = {require('C:/Users/Tutorialspoint/Desktop/NativeReactSample/logo.png')} />
+  );
   render() {
     return (
         <View style={styles.container}>
           <TouchableOpacity onPress={(evt) => this.handlePress(evt)}>
-            <Image source={require('./images (2).jpg')} style={{resizeMode:'cover'}}>
-            </Image>
+            {this.ImagesExample()}
           </TouchableOpacity>
         </View>
 );

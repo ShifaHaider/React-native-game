@@ -26,11 +26,11 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.825">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.75">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
               <folding>
-                <marker date="1540144414931" expanded="false" signature="391:409" placeholder="..." />
-                <marker date="1540144414931" expanded="true" signature="409:632" placeholder="..." />
+                <marker date="1540144791854" expanded="false" signature="525:543" placeholder="..." />
+                <marker date="1540144791854" expanded="true" signature="543:694" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -213,11 +213,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.825">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.75">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding>
-            <marker date="1540144414931" expanded="false" signature="391:409" placeholder="..." />
-            <marker date="1540144414931" expanded="true" signature="409:632" placeholder="..." />
+            <marker date="1540144791854" expanded="false" signature="525:543" placeholder="..." />
+            <marker date="1540144791854" expanded="true" signature="543:694" placeholder="..." />
           </folding>
         </state>
       </provider>
