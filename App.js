@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View , Images } from 'react-native';
+import { StyleSheet, Text, View , Images , Button } from 'react-native';
 
 export default class App extends React.Component {
   render() {
@@ -7,7 +7,8 @@ export default class App extends React.Component {
         <View style={styles.container}>
           <Image source={require('./images (2).jpg')} style={styles.backgroundImage}>
             <Text>Hello World!</Text>
-            <Text>Hello World!</Text>
+            <Text>Hello World 2!</Text>
+            <Button>Button</Button>
           </Image>
         </View>
 );
