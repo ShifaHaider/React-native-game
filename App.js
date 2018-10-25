@@ -39,7 +39,7 @@ export default class App extends React.Component {
         }
 
         return (
-            <ImageBackground source={require('./assets/nature.png')} style={{ flex : 1 }}>
+            <ImageBackground source={require('./assets/game_bg.jpg')} style={{ flex : 1 }}>
                 <View style={{flex: 1 , position: 'absolute' , left: this.state.left + '%'}}>
                     <Egg/>
                 </View>
