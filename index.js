@@ -31,7 +31,6 @@ export default class Egg extends React.Component {
     }
 
     render() {
-        console.log(this.props.l);
 
         return (
 
