@@ -13,9 +13,6 @@ export default class Egg extends React.Component {
         this.moveEgg();
     }
 
-    handlePress(evt) {
-    }
-
     moveEgg() {
         var top = 0;
         var i = setInterval( ()=> {
@@ -25,7 +22,7 @@ export default class Egg extends React.Component {
             }
             else{
                 clearInterval(i);
-                top = 0
+                top = 10
             }
         })
     }
