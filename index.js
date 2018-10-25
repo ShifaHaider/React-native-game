@@ -30,9 +30,7 @@ export default class Egg extends React.Component {
         console.log(this.state.imageLeft);
         return (
 
-            <Image
-                style={{}}
-                source={require('./assets/egg2.png')}/>
+            <Image source={require('./assets/egg2.png')}/>
 
         );
     }
