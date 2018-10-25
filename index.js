@@ -6,7 +6,6 @@ export default class Egg extends React.Component {
     constructor() {
         super();
         this.state = {
-            fadeAnim: new Animated.Value(0),
             imageTop: 0
         }
         this.moveEgg();
