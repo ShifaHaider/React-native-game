@@ -12,16 +12,6 @@ export default class Egg extends React.Component {
         this.moveEgg();
     }
 
-    componentDidMount() {
-        Animated.timing(
-            this.state.fadeAnim, {
-                toValue: 1,
-                duration: 5000
-            }
-        ).start()
-
-    }
-
     handlePress(evt) {
         Alert.alert(`x coord = ${evt.nativeEvent.locationX}`);
         Alert.alert(`y coord = ${evt.nativeEvent.locationY}`);
