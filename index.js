@@ -3,8 +3,9 @@ import { StyleSheet, Text, View , ImageBackground  , Button , Image, TouchableOp
 
 export default class Egg extends React.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        console.log(props);
         this.state = {
             imageTop: 0
         };
@@ -30,11 +31,14 @@ export default class Egg extends React.Component {
     }
 
     render() {
+        console.log(this.props.l);
 
         return (
+
             <Image
-                style={{ height: 40, width: 30, position: 'absolute', top: this.state.imageTop + '%' }}
+                style={{height: 40, width: 30, position: 'absolute', top: this.state.imageTop + '%' , left: (this.props.l || 0) + '%' }}
                 source={require('./assets/egg2.png')}/>
+
         );
     }
 }

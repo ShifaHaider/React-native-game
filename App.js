@@ -1,48 +1,51 @@
 import React from 'react';
 import { StyleSheet, Text, View , ImageBackground  , Button , Image,TouchableOpacity , Alert , Animated} from 'react-native';
 import Egg from './index.js'
+
+
 export default class App extends React.Component {
 
     constructor() {
         super();
         this.state = {
-            fadeAnim: new Animated.Value(0),
-            imageLeft: 0
-        }
+            //fadeAnim: new Animated.Value(0),
+            imageLeft: 0,
+            imageTop: 0,
+            eggs:[<Egg/>]
+        };
+        this.moveEgg();
     }
 
-    componentDidMount() {
-        Animated.timing(
-            this.state.fadeAnim, {
-                toValue: 1,
-                duration: 5000
+    moveEgg() {
+        var top = 0;
+        var i = setInterval(()=> {
+            if (top < 100) {
+                top++;
+                this.setState({imageTop: top});
             }
-        ).start()
-
+            else {
+                //clearInterval(i);
+                top = 0
+            }
+        })
     }
-
-    handlePress(evt) {
-        Alert.alert(`x coord = ${evt.nativeEvent.locationX}`);
-        Alert.alert(`y coord = ${evt.nativeEvent.locationY}`);
-    }
-
 
     render() {
         const opacity = this.state.fadeAnim;
-
         let steps = [];
-        for (let i = 0; i < 10; i++) {
+        setInterval(()=>{
             var left = Math.floor(Math.random() * 100);
             console.log(left);
-            this.setState({imageLeft : left});
-            steps.push(<Egg key={i}/>);
-            //steps.push(i);
-            console.log(steps);
-        }
+            steps.push(<Egg l={left} key={steps.length}/>);
+            this.setState({eggs: steps});
+        } , 2000);
+
 
         return (
             <ImageBackground source={require('./assets/game_bg.jpg')} style={{ flex : 1 }}>
-                {steps}
+                {this.state.eggs.map((e)=>{
+                    return(e)
+                })}
             </ImageBackground>
         );
     }
@@ -61,6 +64,5 @@ const styles = StyleSheet.create({
         height: '100%',
         resizeMode: 'cover'
     }
-
 });
 

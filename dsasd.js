@@ -29,6 +29,16 @@ export default class App extends React.Component {
 
     render() {
         const opacity = this.state.fadeAnim;
+        let steps = [];
+        for (let i = 0; i < 10; i++) {
+            this.left = Math.floor(Math.random() * 100);
+            console.log(this.left);
+            //this.setState({imageLeft : left});
+            steps.push(<Egg key={i}/>);
+            //steps.push(i);
+            console.log(steps);
+        }
+
         return (
             <ImageBackground source={require('./assets/nature.png')} style={{ flex : 1 }}>
                 <Animated.View style={{
@@ -44,6 +54,18 @@ export default class App extends React.Component {
                 <View style={styles.container}>
                     <TouchableOpacity onPress={(evt) => this.handlePress(evt)}>
                     </TouchableOpacity>
+                    <Image
+                        style={{ height: 40, width: 30, position: 'absolute', top: this.state.imageTop+ 15 +'%', left: '1%' }}
+                        source={require('./assets/egg2.png')}/>
+                    <Image
+                        style={{ height: 40, width: 30, position: 'absolute', top: this.state.imageTop+ 10 +'%', left: '30%' }}
+                        source={require('./assets/egg2.png')}/>
+                    <Image
+                        style={{ height: 40, width: 30, position: 'absolute', top: this.state.imageTop+5 +'%', left: '55%' }}
+                        source={require('./assets/egg2.png')}/>
+                    <Image
+                        style={{ height: 40, width: 30, position: 'absolute', top: this.state.imageTop +'%', left: '85%' }}
+                        source={require('./assets/egg2.png')}/>
                 </View>
             </ImageBackground>
         );
