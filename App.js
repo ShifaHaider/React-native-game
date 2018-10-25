@@ -43,6 +43,7 @@ export default class App extends React.Component {
                 {this.state.eggs.map((e)=>{
                     return(e)
                 })}
+                <Image></Image>
             </ImageBackground>
         );
     }
