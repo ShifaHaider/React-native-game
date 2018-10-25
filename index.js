@@ -41,7 +41,6 @@ export default class Egg extends React.Component {
     }
 
     render() {
-        const opacity = this.state.fadeAnim;
 
         return (
             <Image
