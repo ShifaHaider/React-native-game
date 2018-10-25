@@ -14,7 +14,6 @@ export default class Egg extends React.Component {
     }
 
     handlePress(evt) {
-        Alert.alert(`y coord = ${evt.nativeEvent.locationY}`);
     }
 
     moveEgg() {
