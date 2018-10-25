@@ -7,7 +7,7 @@ export default class App extends React.Component {
         super();
         this.state = {
             fadeAnim: new Animated.Value(0),
-            left: 0
+            imageLeft: 0
         }
     }
 
@@ -33,14 +33,14 @@ export default class App extends React.Component {
         let steps = [];
         for (let i = 0; i < 10; i++) {
             var left = Math.floor(Math.random() * 100);
-            this.setState({left : left});
+            this.setState({imageLeft : left});
             steps.push(<Egg/>);
             console.log(steps);
         }
 
         return (
             <ImageBackground source={require('./assets/game_bg.jpg')} style={{ flex : 1 }}>
-                <View style={{flex: 1 , position: 'absolute' , left: this.state.left + '%'}}>
+                <View style={{flex: 1 , position: 'absolute' , left: this.state.imageLeft + '%'}}>
                     <Egg/>
                 </View>
             </ImageBackground>
