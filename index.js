@@ -31,7 +31,7 @@ export default class Egg extends React.Component {
         return (
 
             <Image
-                style={{height: 40, width: 30, position: 'absolute', top: this.state.imageTop + '%' , left: (this.props.l || 0) + '%' }}
+                style={{height: 40, width: 30, position: 'absolute', top: this.state.imageTop + '%' , left: (this.state.imageLeft || 0) + '%' }}
                 source={require('./assets/egg2.png')}/>
 
         );
