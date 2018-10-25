@@ -6,7 +6,8 @@ export default class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            fadeAnim: new Animated.Value(0)
+            fadeAnim: new Animated.Value(0),
+            left: 0
         }
     }
 
@@ -31,14 +32,16 @@ export default class App extends React.Component {
 
         let steps = [];
         for (let i = 0; i < 10; i++) {
+            var left = Math.floor(Math.random() * 100);
+            this.setState({left : left});
             steps.push(<Egg/>);
             console.log(steps);
         }
 
         return (
             <ImageBackground source={require('./assets/nature.png')} style={{ flex : 1 }}>
-                <View style={{flex: 1}}>
-                <Egg/>
+                <View style={{flex: 1 , position: 'absolute' , left: this.state.left + '%'}}>
+                    <Egg/>
                 </View>
             </ImageBackground>
         );
