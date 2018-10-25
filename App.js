@@ -44,8 +44,8 @@ export default class App extends React.Component {
                 {this.state.eggs.map((e)=>{
                     return(e)
                 })}
-                <Image style={{height: 40, width: 30, position: 'absolute', bottom : 2}}
-                    source={require('./assets/egg2.png')}/>
+                <Image style={{height: 40, width: 40, position: 'absolute', bottom : 2}}
+                    source={require('./assets/basket.jpg')}/>
             </ImageBackground>
         );
     }
