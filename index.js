@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     image: {
         height: 45,
         width: 35,
-        position: 'absolute',
+        position: 'absolute'
     }
 });
 
