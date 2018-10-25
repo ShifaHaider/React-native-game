@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View , ImageBackground  , Button , Image,TouchableOpacity , Alert , Animated} from 'react-native';
-import Egg from './index.js'
+import { StyleSheet, Text, View , ImageBackground  , Button , Image,
+    TouchableOpacity , Alert , Animated} from 'react-native';
+
 export default class App extends React.Component {
 
     constructor() {
@@ -12,9 +13,9 @@ export default class App extends React.Component {
 
     componentDidMount() {
         Animated.timing(
-            this.state.fadeAnim, {
-                toValue: 1,
-                duration: 5000
+            this.state.fadeAnim,{
+                toValue:1,
+                duration:5000
             }
         ).start()
 
@@ -28,16 +29,22 @@ export default class App extends React.Component {
 
     render() {
         const opacity = this.state.fadeAnim;
-
-        let steps = [];
-        for (let i = 0; i < 10; i++) {
-            steps.push(<Egg/>);
-            console.log(steps);
-        }
-
         return (
             <ImageBackground source={require('./assets/nature.png')} style={{ flex : 1 }}>
-                <Egg/>
+                <Animated.View style={{
+                backgroundColor: "red",
+                height: "50%",
+                width: "80%",
+                opacity: opacity,
+                justifyContent:"center",
+                alignItems:"center"
+            }} >
+                    <Text style={{fontSize:30}}>Hello</Text>
+                </Animated.View>
+                <View style={styles.container}>
+                    <TouchableOpacity onPress={(evt) => this.handlePress(evt)}>
+                    </TouchableOpacity>
+                </View>
             </ImageBackground>
         );
     }
