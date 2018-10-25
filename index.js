@@ -27,6 +27,7 @@ export default class Egg extends React.Component {
             }
             else{
                 clearInterval(i);
+                top = 0
             }
         })
     }
