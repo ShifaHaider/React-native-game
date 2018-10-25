@@ -38,7 +38,6 @@ export default class App extends React.Component {
             this.setState({eggs: steps});
         } , 2000);
 
-
         return (
             <ImageBackground source={require('./assets/game_bg.jpg')} style={{ flex : 1 }}>
                 {this.state.eggs.map((e)=>{
@@ -59,7 +58,7 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         height: '100%',
-        resizeMode: 'cover'
+        //resizeMode: 'cover'
     }
 });
 
