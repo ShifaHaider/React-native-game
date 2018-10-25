@@ -42,6 +42,7 @@ export default class App extends React.Component {
         return (
             <ImageBackground source={require('./assets/game_bg.jpg')} style={{ flex : 1 }}>
                 {this.state.eggs.map((e)=>{
+                    console.log(e);
                     return(e)
                 })}
             </ImageBackground>
