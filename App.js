@@ -8,7 +8,6 @@ export default class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            //fadeAnim: new Animated.Value(0),
             imageLeft: 0,
             imageTop: 0,
             eggs:[<Egg/>]
