@@ -33,16 +33,16 @@ export default class App extends React.Component {
         let steps = [];
         for (let i = 0; i < 10; i++) {
             var left = Math.floor(Math.random() * 100);
+            console.log(left);
             this.setState({imageLeft : left});
-            steps.push(<Egg/>);
+            steps.push(<Egg key={i}/>);
+            //steps.push(i);
             console.log(steps);
         }
 
         return (
             <ImageBackground source={require('./assets/game_bg.jpg')} style={{ flex : 1 }}>
-                <View style={{flex: 1 , position: 'absolute' , left: this.state.imageLeft + '%'}}>
-                    <Egg/>
-                </View>
+                {steps}
             </ImageBackground>
         );
     }
