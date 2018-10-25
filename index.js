@@ -13,11 +13,6 @@ export default class Egg extends React.Component {
         this.moveEgg();
     }
 
-    handlePress(evt) {
-        Alert.alert(`x coord = ${evt.nativeEvent.locationX}`);
-        Alert.alert(`y coord = ${evt.nativeEvent.locationY}`);
-    }
-
     moveEgg() {
         var top = 0;
         var i = setInterval( ()=> {
