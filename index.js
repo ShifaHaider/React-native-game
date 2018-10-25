@@ -8,7 +8,7 @@ export default class Egg extends React.Component {
         console.log(props);
         this.state = {
             imageTop: 0,
-            imageLeft
+            imageLeft: this.props.l
         };
         this.moveEgg();
     }
