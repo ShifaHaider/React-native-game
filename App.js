@@ -23,7 +23,7 @@ export default class App extends React.Component {
                 this.setState({imageTop: top});
             }
             else {
-                clearInterval(i);
+                //clearInterval(i);
                 top = 0
             }
         })
