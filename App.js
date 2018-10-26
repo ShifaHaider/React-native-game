@@ -24,7 +24,7 @@ export default class App extends React.Component {
             }
             else {
                 //clearInterval(i);
-                top = 0
+                top = 0;
             }
         })
     }
