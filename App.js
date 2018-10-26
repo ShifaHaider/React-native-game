@@ -34,8 +34,7 @@ export default class App extends React.Component {
         let steps = [];
         setInterval(()=>{
             var left = Math.floor(Math.random() * 100);
-            steps.push(<Egg l={left} key={steps.length} style={{height: 40, width: 30, position: 'absolute',
-             top: this.state.imageTop + '%', left: left}}/>);
+            steps.push(<Egg l={left} key={steps.length} />);
             this.setState({eggs: steps});
         } , 2000);
 
@@ -44,8 +43,8 @@ export default class App extends React.Component {
                 {this.state.eggs.map((e)=>{
                     return(e)
                 })}
-                <Image style={{height: 40, width: 40, position: 'absolute', bottom : 2}}
-                    source={require('./assets/basket.jpg')}/>
+                <Image style={{height: 80, width: 160, position: 'absolute', bottom : 2}}
+                source={require('./assets/basket.jpg')}/>
             </ImageBackground>
         );
     }
@@ -64,4 +63,5 @@ const styles = StyleSheet.create({
         resizeMode: 'cover'
     }
 });
+
 
