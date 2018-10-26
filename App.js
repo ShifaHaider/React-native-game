@@ -49,7 +49,7 @@ export default class App extends React.Component {
         );
     }
 }
-grfgdfgdfgfdgdfg
+grfgdfgdfgfdgd
 
 const styles = StyleSheet.create({
     container: {
