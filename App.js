@@ -34,7 +34,7 @@ export default class App extends React.Component {
         let steps = [];
         setInterval(()=>{
             var left = Math.floor(Math.random() * 100);
-            steps.push(<Egg left={left} key={steps.length} style={{left: left}}/>);
+            steps.push(<Egg left={left} key={steps.length} />);
             this.setState({eggs: steps});
         } , 2000);
 
