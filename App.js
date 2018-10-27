@@ -38,10 +38,10 @@ export default class App extends React.Component {
         const opacity = this.state.fadeAnim;
         let steps = [];
         setInterval(()=> {
-            //var left = Math.floor(Math.random() * 100);
-            //steps.push(<Egg left={left} key={steps.length}/>);
-            //console.log(steps);
-            //this.setState({eggs: steps});
+            var left = Math.floor(Math.random() * 100);
+            steps.push(<Egg left={left} key={steps.length}/>);
+            console.log(steps);
+            this.setState({eggs: steps});
         }, 2000);
 
         return (
