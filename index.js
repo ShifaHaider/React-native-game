@@ -5,7 +5,7 @@ export default class Egg extends React.Component {
 
     constructor(props) {
         super(props);
-        //console.log(props);
+        console.log(props);
         this.state = {
             imageTop: 0,
             imageLeft: this.props.left
