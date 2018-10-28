@@ -70,6 +70,6 @@ const styles = StyleSheet.create({
         resizeMode: 'cover'
     }
 });
-Hellooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Hellooooooooooooooooooooooooooooooooooooooooooooooooooo
 
 
