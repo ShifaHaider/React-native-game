@@ -49,7 +49,7 @@ export default class App extends React.Component {
                         e
                     )
                 })}
-hello
+hell
                 <Image style={{height: 80, width: 160, position: 'absolute', bottom : 2}}
                        source={require('./assets/basket.jpg')}/>
             </ImageBackground>
