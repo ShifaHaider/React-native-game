@@ -51,5 +51,3 @@ const styles = StyleSheet.create({
         position: 'absolute'
     }
 });
-
-x
