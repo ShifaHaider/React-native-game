@@ -17,35 +17,39 @@ export default class App extends React.Component {
     }
 
     moveEgg() {
-        console.log(document);
+        //console.log(document);
         var top = 0;
-        console.log('Hello');
         var i = setInterval(()=> {
-            console.log(top++);
-            //if (top < 100) {
-            //    top++;
-            //    console.log(top);
-            //    this.setState({imageTop: top});
-            //}
-            //else {
-            //    //clearInterval(i);
-            //    top = 0;
-            //}
+            if (top < 100) {
+                top++;
+                this.setState({imageTop: top});
+            }
+            else {
+                //clearInterval(i);
+                top = 0;
+            }
         })
     }
 
     render() {
         const opacity = this.state.fadeAnim;
         let steps = [];
-        setInterval(()=> {
+        console.log(steps);
+      var s = setInterval(()=> {
             var left = Math.floor(Math.random() * 100);
-            steps.push(<Egg left={left} key={steps.length}/>);
-            console.log(steps);
-            this.setState({eggs: steps});
-        }, 2000);
+            //steps.push(<Egg left={left} key={steps.length} syle={{left : left}}/>);
+            console.log(left);
+            //this.setState({eggs: steps});
+        });
 
         return (
             <ImageBackground source={require('./assets/game_bg.jpg')} style={{ flex : 1 }}>
+
+
+
+
+                <Image source={require('./assets/egg2.png')}
+                       style={{height: 40, width: 30, position: 'absolute',top: this.state.imageTop + '%'}}/>
 
                 <Image style={{height: 80, width: 160, position: 'absolute', bottom : 2}}
                        source={require('./assets/basket.jpg')}/>
