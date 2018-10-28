@@ -34,7 +34,6 @@ export default class App extends React.Component {
     render() {
         const opacity = this.state.fadeAnim;
         let steps = [];
-        console.log(steps);
       var s = setInterval(()=> {
             var left = Math.floor(Math.random() * 100);
             steps.push(<Egg left={left} key={steps.length}/>);
@@ -46,12 +45,10 @@ export default class App extends React.Component {
             <ImageBackground source={require('./assets/game_bg.jpg')} style={{ flex : 1 }}>
 
                 {this.state.eggs.map((e)=>{
-                    console.log(e);
+                    //console.log(e);
                 })}
 
-
-                <Image source={require('./assets/egg2.png')}
-                       style={{height: 40, width: 30, position: 'absolute',top: this.state.imageTop + '%'}}/>
+     <Egg/>
 
                 <Image style={{height: 80, width: 160, position: 'absolute', bottom : 2}}
                        source={require('./assets/basket.jpg')}/>
