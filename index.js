@@ -5,7 +5,7 @@ export default class Egg extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log(props);
+        //console.log(props);
         this.state = {
             imageTop: 0,
             imageLeft: this.props.left
@@ -30,7 +30,8 @@ export default class Egg extends React.Component {
     render() {
         console.log(this.props);
         return (
- <View></View>
+            <Image source={require('./assets/egg2.png')}
+                   style={{height: 40, width: 30, position: 'absolute',top: this.state.imageTop + '%'}}/>
         );
     }
 }
