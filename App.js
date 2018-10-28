@@ -37,15 +37,17 @@ export default class App extends React.Component {
         console.log(steps);
       var s = setInterval(()=> {
             var left = Math.floor(Math.random() * 100);
-            //steps.push(<Egg left={left} key={steps.length} syle={{left : left}}/>);
-            console.log(left);
-            //this.setState({eggs: steps});
+            steps.push(<Egg left={left} key={steps.length}/>);
+            //console.log(left);
+            this.setState({eggs: steps});
         });
 
         return (
             <ImageBackground source={require('./assets/game_bg.jpg')} style={{ flex : 1 }}>
 
-
+                {this.state.eggs.map((e)=>{
+                    console.log(e);
+                })}
 
 
                 <Image source={require('./assets/egg2.png')}
