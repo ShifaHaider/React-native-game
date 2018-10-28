@@ -36,7 +36,7 @@ export default class App extends React.Component {
         let steps = [];
       var s = setInterval(()=> {
             var left = Math.floor(Math.random() * 100);
-            steps.push(<Egg left={left} key={steps.length}/>);
+            steps.push(<Egg l={left} key={steps.length}/>);
             //console.log(left);
             this.setState({eggs: steps});
         });
@@ -47,6 +47,7 @@ export default class App extends React.Component {
                 {this.state.eggs.map((e)=>{
                     //console.log(e);
                 })}
+
                 <Image source={require('./assets/egg2.png')}
                        style={{height: 40, width: 30, position: 'absolute',top: this.state.imageTop + '%'}}/>
 
