@@ -11,7 +11,7 @@ export default class App extends React.Component {
 
 
     vibration() {
-        Vibration.vibrate([1000, 2000, 3000]);
+        Vibration.vibrate(1000);
     }
 
 
