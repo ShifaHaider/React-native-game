@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     backgroundImage: {
-        width: '100%',
         height: '100%',
         resizeMode: 'cover'
     }
