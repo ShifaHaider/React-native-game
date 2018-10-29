@@ -26,7 +26,7 @@ export default class App extends React.Component {
         );
     }
 }
-Hellooooooo
+Helloooooo
 const styles = StyleSheet.create({
     container: {
         flex: 1,
