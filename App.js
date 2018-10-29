@@ -26,14 +26,14 @@ export default class App extends React.Component {
         );
     }
 }
-
+Hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
-    },
-   
+    }
+
 });
 
 
