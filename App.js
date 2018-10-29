@@ -21,8 +21,7 @@ export default class App extends React.Component {
                 <Button
                     onPress={this.vibration.bind(this)}
                     title="Vibration"
-                    color="#841584"
-                    accessibilityLabel="Learn more about this purple button"/>
+                    color="#841584"/>
             </View>
         );
     }
