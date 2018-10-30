@@ -1,27 +1,20 @@
 import React from 'react';
-import { StyleSheet, Text, View , ImageBackground , ScrollView, Vibration
+import { StyleSheet, Text, View , ImageBackground , ScrollView, Vibration, PermissionsAndroid
     , Button , Image,TouchableOpacity , Alert , Animated , CameraRoll } from 'react-native';
-
+import Vibration from './vibration.js'
 
 export default class App extends React.Component {
 
     constructor() {
         super();
-    }
 
-
-    vibration() {
-        Vibration.vibrate(1000);
     }
 
 
     render() {
         return (
-            <View style={{flex: 1}}>
-                <Button
-                    onPress={this.vibration.bind(this)}
-                    title="Vibration"
-                    color="#841584"/>
+            <View style={styles.container}>
+              <Vibration/>
             </View>
         );
     }
