@@ -25,7 +25,6 @@ export default class ImagePicker extends React.Component {
             }
         })
     }
-//    
 
 
     render(){
