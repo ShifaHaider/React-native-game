@@ -26,13 +26,11 @@ export default class ImagePicker extends React.Component {
         })
     }
 //    ImagePicker.showImagePicker(options, (response) => {
-//
-//}
+
 
     render(){
         return(
-            <View>
-            </View>
+            <View></View>
         )
     }
 }
