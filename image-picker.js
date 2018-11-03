@@ -20,7 +20,7 @@ export default class ImagePicker extends React.Component {
             else{
                 let source = { uri: response.uri };
                 this.setState({
-                    //groupImgUrl: source.uri
+                    groupImgUrl: source.uri
                 })
             }
         })
