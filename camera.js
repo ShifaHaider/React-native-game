@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View , Vibration, PermissionsAndroid, Button , Image,TouchableOpacity  , CameraRoll } from 'react-native';
+import { StyleSheet, Text, View , Vibration, PermissionsAndroid, Button , Image,TouchableOpacity
+    ,ScrollView  , CameraRoll,RNFS } from 'react-native';
 
 
 export default class Camera extends React.Component {
@@ -28,7 +29,11 @@ export default class Camera extends React.Component {
                 console.warn(err)
             }
         }
+        requestCameraPermission();
     }
+
+
+
     _handleButtonPress = () => {
         CameraRoll.getPhotos({
             first: 20,
@@ -44,7 +49,7 @@ export default class Camera extends React.Component {
     };
     render() {
         return (
-            <View>
+            <View style={styles.container}>
                 <Button title="Load Images" onPress={this._handleButtonPress} />
                 <ScrollView>
                     {this.state.photos.map((p, i) => {

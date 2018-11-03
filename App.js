@@ -1,20 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View , ImageBackground , ScrollView, Vibration, PermissionsAndroid
-    , Button , Image,TouchableOpacity , Alert , Animated , CameraRoll } from 'react-native';
-import Vibration from './vibration.js'
+import { StyleSheet, Text, View , ImageBackground , ScrollView, PermissionsAndroid
+    , Button , Image,TouchableOpacity , Alert , Animated  } from 'react-native';
+import Vibrations from './vibration.js'
+import Camera from './camera.js'
+
+
 
 export default class App extends React.Component {
 
     constructor() {
         super();
-
     }
 
 
     render() {
         return (
             <View style={styles.container}>
-              <Vibration/>
+              <Camera/>
             </View>
         );
     }
@@ -26,6 +28,5 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     }
-
 });
 

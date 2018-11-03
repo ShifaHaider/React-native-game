@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View , ImageBackground , ScrollView, Vibration }from 'react-native';
 
 
-export default class Vibration extends React.Component {
+export default class Vibrations extends React.Component {
 
     constructor() {
         super();
