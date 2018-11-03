@@ -19,6 +19,9 @@ export default class ImagePicker extends React.Component {
             else if (response.customButton){}
             else{
                 let source = { uri: response.uri };
+                this.setState({
+                    //groupImgUrl: source.uri
+                })
             }
         })
     }
