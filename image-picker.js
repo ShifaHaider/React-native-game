@@ -15,6 +15,7 @@ export default class ImagePicker extends React.Component {
     ImagePick(){
         ImagePicker.showImagePicker(options, (response) => {
             if (response.didCancel) {}
+            else if (response.error){}
         })
     }
 //    ImagePicker.showImagePicker(options, (response) => {
