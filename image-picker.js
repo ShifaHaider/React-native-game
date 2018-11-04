@@ -29,7 +29,9 @@ export default class ImagePicker extends React.Component {
 
     render(){
         return(
-            <View></View>
+            <View style={{flex: 1}}>
+                <Button onPress={this.ImagePick.bind(this)}>Start Camera</Button>
+            </View>
         )
     }
 }
